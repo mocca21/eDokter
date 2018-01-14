@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">eDokter</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email">Email</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="start">Start</string>
+    <string name="lihat_antrian">Lihat Antrian</string>
+    <string name="temukan_dokter">Temukan Dokter</string>
+    <string name="log_in_dokterr">Log in dokterr</string>
+    <string name="register_btn">Register</string>
+    <string name="sudah_punya">Sudah punya akun ? silahkan log in.</string>
+    <string name="no_ktp">No KTP</string>
+    <string name="nama_pasien">Nama Pasien</string>
+    <string name="alamat_pasien">Alamat Pasien</string>
+    <string name="no_hp">No HP</string>
+    <string name="nama_dokter">Nama Dokter</string>
+    <string name="daftar">Daftar</string>
+    <string name="list_pasien">List Pasien</string>
+</resources>

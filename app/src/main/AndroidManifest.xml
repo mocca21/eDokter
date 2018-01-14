@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edokter">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".menu.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dokter.LoginActivity"
+            android:label="Login" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".menu.HomeActivity"
+            android:label="Home" />
+        <activity
+            android:name=".dokter.RegisterActivity"
+            android:label="Register" />
+        <activity
+            android:name=".dokter.ForgotPasswordActivity"
+            android:label="Forgot Password" />
+        <activity
+            android:name=".ReservasiActivity"
+            android:label="Reservasi" />
+        <activity
+            android:name=".dokter.MenuDokterActivity"
+            android:label="Menu Dokter" />
+        <activity
+            android:name=".dokter.MasukanDataDokterActivity"
+            android:label="Data Dokter" />
+        <activity
+            android:name=".menu.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".dokter.ListPasien"
+            android:label="List Pasien" />
+        <activity
+            android:name=".menu.LihatAntrian"
+            android:label="Lihat No Antrian" />
+        <activity
+            android:name=".menu.DaftarDokter"
+            android:label="Daftar Dokter" />
+        <activity android:name=".dokter.RekapData" android:label="Rekap Data"/>
+        <activity android:name=".dokter.CountAntrian" android:label="Count"></activity>
+    </application>
+
+</manifest>

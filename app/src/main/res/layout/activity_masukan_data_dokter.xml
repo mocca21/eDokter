@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edokter.dokter.MasukanDataDokterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundlogin"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/etnamainfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Nama Fasilitas"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_white" />
+
+        <ImageView
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etnamainfo"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white" />
+
+        <EditText
+            android:id="@+id/etAlamatinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_alamat_pasien"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Alamat Praktek"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_white" />
+
+        <ImageView
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etAlamatinfo"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white" />
+
+        <EditText
+            android:id="@+id/etNoinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_no_hp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Nomor HP/Telp"
+            android:inputType="number"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_white" />
+
+        <ImageView
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etNoinfo"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white" />
+
+        <Button
+            android:id="@+id/btnGetLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view4"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_login"
+            android:text="Dapatkan Lokasi" />
+
+        <EditText
+            android:id="@+id/etinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetLokasi"
+            android:layout_marginTop="12dp"
+            android:background="#0000"
+            android:drawableLeft="@drawable/ic_info_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textColorHint="@color/text_white"
+            android:hint="Masukan Informasi "
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Masukan Data"
+            android:textColor="@color/text_white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_login"
+            android:text="Simpan" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

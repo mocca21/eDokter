@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edokter.menu.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundlogin"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/start"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvLihatAntrian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvStart"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/ic_look_queue"
+            android:text="@string/lihat_antrian"
+            android:textColor="@color/text_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvCariLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvLihatAntrian"
+            android:layout_alignBottom="@+id/tvLihatAntrian"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:drawableTop="@drawable/ic_location_home_menu"
+            android:text="@string/temukan_dokter"
+            android:textColor="@color/text_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvloginDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCariLokasi"
+            android:layout_alignBottom="@+id/tvCariLokasi"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/ic_login_doktor_menu"
+            android:text="@string/log_in_dokterr"
+            android:textAlignment="center"
+            android:textColor="@color/text_white"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

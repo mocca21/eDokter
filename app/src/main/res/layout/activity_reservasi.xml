@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edokter.ReservasiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundlogin"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/etNamaDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="@string/nama_dokter"
+            android:textAlignment="center"
+            android:textColor="@color/text_white" />
+
+        <EditText
+            android:id="@+id/etnoKTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNamaDokter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:hint="@string/no_ktp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_ktp"
+            android:textColorHint="@color/text_white"
+            android:textColor="@color/text_white"
+            android:inputType="number" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etnoKTP"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white"
+            android:id="@+id/view" />
+
+        <EditText
+            android:id="@+id/etNamaPasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:textColorHint="@color/text_white"
+            android:hint="@string/nama_pasien"
+            android:textColor="@color/text_white"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etNamaPasien"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white"
+            android:id="@+id/view1" />
+
+        <EditText
+            android:id="@+id/etAlamatPasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_alamat_pasien"
+            android:textColorHint="@color/text_white"
+            android:hint="@string/alamat_pasien"
+            android:textColor="@color/text_white"
+            android:inputType="textPostalAddress" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etAlamatPasien"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white"
+            android:id="@+id/view3" />
+
+        <EditText
+            android:id="@+id/etNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_no_hp"
+            android:textColorHint="@color/text_white"
+            android:hint="@string/no_hp"
+            android:textColor="@color/text_white"
+            android:inputType="number" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etNoHp"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white"
+            android:id="@+id/view4" />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view4"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/background_login"
+            android:clickable="true"
+            android:text="@string/daftar"
+            android:textAllCaps="false"
+            android:textColor="@color/text_btn_login" />
+
+    </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+

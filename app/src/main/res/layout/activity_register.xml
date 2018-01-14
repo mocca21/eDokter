@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edokter.dokter.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundlogin"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/logo"
+            android:id="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:hint="@string/email"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:textColorHint="@color/text_white"
+            android:textColor="@color/text_white"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white"
+            android:id="@+id/view" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:textColorHint="@color/text_white"
+            android:hint=".............."
+            android:textColor="@color/text_white"
+            android:inputType="textPassword" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_white"
+            android:id="@+id/view1" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:background="@drawable/background_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="@string/register_btn"
+            android:textColor="@color/text_btn_login"/>
+
+        <TextView
+            android:id="@+id/tvlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:text="@string/sudah_punya"
+            android:textColor="@color/text_white" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

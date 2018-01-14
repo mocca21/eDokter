@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "410756815557",
+    "firebase_url": "https://edokter-a432a.firebaseio.com",
+    "project_id": "edokter-a432a",
+    "storage_bucket": "edokter-a432a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410756815557:android:c9ee39c5c228149b",
+        "android_client_info": {
+          "package_name": "com.edokter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410756815557-p45qj2fvoio7ubgcecv7jbtq6t5gqefg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUEydiJtJTTSn2Gooe6_9nh-YfFZXpdm4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
